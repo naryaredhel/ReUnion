@@ -36,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
         if (FirebaseAuth.getInstance().getCurrentUser() == null) {
             navigateToLoginDelayed(1000);
         } else {
-            navigateToConversationsDelayed(1000);
+            navigateToConversationsDelayed(2000);
         }
     }
 
