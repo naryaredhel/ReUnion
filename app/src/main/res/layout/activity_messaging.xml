@@ -11,12 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:padding="16dp"
+        android:gravity="center_vertical"
         android:background="#ffffff"
         android:layout_alignParentBottom="true">
-
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:hint="Start writing your message....."/>
     </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_send"/>
 
 </RelativeLayout>

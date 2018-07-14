@@ -1,5 +1,7 @@
 package com.safaorhan.reunion.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -16,6 +18,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.safaorhan.reunion.FirestoreHelper;
+import com.safaorhan.reunion.Messaging;
 import com.safaorhan.reunion.R;
 import com.safaorhan.reunion.model.Conversation;
 import com.safaorhan.reunion.model.Message;

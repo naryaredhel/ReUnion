@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.google.firebase.firestore.DocumentReference;
+import com.safaorhan.reunion.Messaging;
 import com.safaorhan.reunion.R;
 import com.safaorhan.reunion.adapter.ConversationAdapter;
 
@@ -48,7 +49,8 @@ public class ConversationsActivity extends AppCompatActivity implements Conversa
 
     @Override
     public void onConversationClick(DocumentReference conversationRef) {
-        
+        Intent intent = new Intent(ConversationsActivity.this, Messaging.class);
+        startActivity(intent);
     }
 
     @Override
